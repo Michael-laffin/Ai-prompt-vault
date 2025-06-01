@@ -4,8 +4,8 @@ const HowItWorks = () => {
   const steps = [
     {
       id: 1,
-      title: 'Purchase on Gumroad',
-      description: 'Securely buy your AI Prompt Pack through Gumroad, our trusted e-commerce platform.',
+      title: 'Purchase on Gumroad or Lemon Squeezy',
+      description: 'Securely buy your AI Prompt Pack through Gumroad or Lemon Squeezy, our trusted e-commerce platforms.',
       ariaLabel: 'Step 1: Purchase on Gumroad'
     },
     {
