@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import KeyFeatures from './components/KeyFeatures';
 import Testimonials from './components/Testimonials';
+import EmailSubscription from './components/EmailSubscription';
 import HowItWorks from './components/HowItWorks';
 import Footer from './components/Footer';
 
@@ -24,6 +25,7 @@ const App = () => {
         <Hero aria-label="Hero Section" />
         <KeyFeatures aria-label="Key Features Section" />
         <Testimonials aria-label="Testimonials Section" />
+        <EmailSubscription aria-label="Email Subscription Section" />
         <HowItWorks aria-label="How It Works Section" />
       </main>
 

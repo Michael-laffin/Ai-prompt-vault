@@ -27,7 +27,7 @@ const Hero = () => {
           <span className="absolute top-0 left-0 w-full h-full border-2 border-neon-purple rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-border-pulse"></span>
         </a>
         <a
-          href="https://lemonsqueezy.com/your-product"
+          href="https://aipromptvault.lemonsqueezy.com/buy/7bcdeccf-0137-41a9-851f-56dd309a8e42"
           className="inline-block bg-dark-blue-700 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-lg sm:text-xl transition-all duration-500 ease-in-out transform hover:scale-110 shadow-lg hover:shadow-neon-glow-blue focus:outline-none focus:ring-2 focus:ring-neon-blue border border-transparent hover:border-neon-green relative overflow-hidden group font-syncopate tracking-wider"
           aria-label="Buy Now on Lemon Squeezy"
           role="button"
