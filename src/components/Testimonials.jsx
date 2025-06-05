@@ -21,7 +21,7 @@ const Testimonials = () => {
               “Saved me 10 hours of trial-and-error!”
             </p>
             <p className="text-base font-semibold text-neon-blue text-right relative z-10 group-hover:text-neon-yellow transition-colors duration-300 font-syncopate">
-              – AI Dev Team Lead
+              – Diana H
             </p>
             <span className="absolute inset-0 border-2 border-transparent rounded-lg group-hover:border-neon-purple transition-all duration-300 animate-border-pulse"></span>
           </div>
@@ -33,7 +33,7 @@ const Testimonials = () => {
               “Finally, a prompt pack I don’t have to tweak 20 times.”
             </p>
             <p className="text-base font-semibold text-neon-purple text-right relative z-10 group-hover:text-neon-pink transition-colors duration-300 font-syncopate">
-              – Freelance Writer
+              – Edward L
             </p>
             <span className="absolute inset-0 border-2 border-transparent rounded-lg group-hover:border-neon-blue transition-all duration-300 animate-border-pulse animation-delay-500"></span>
           </div>

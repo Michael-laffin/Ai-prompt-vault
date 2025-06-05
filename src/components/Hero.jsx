@@ -17,7 +17,7 @@ const Hero = () => {
       </p>
       <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 animate-fade-in delay-400">
         <a
-          href="https://gumroad.com/l/your-product"
+          href="https://6611101968303.gumroad.com/l/eruimz"
           className="inline-block bg-neon-purple text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-lg sm:text-xl transition-all duration-500 ease-in-out transform hover:scale-110 shadow-lg hover:shadow-neon-glow-purple focus:outline-none focus:ring-2 focus:ring-neon-purple border border-transparent hover:border-neon-pink relative overflow-hidden group font-syncopate tracking-wider"
           aria-label="Buy Now on Gumroad"
           role="button"
