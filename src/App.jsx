@@ -1,10 +1,12 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import KeyFeatures from './components/KeyFeatures';
-import Testimonials from './components/Testimonials';
-import EmailSubscription from './components/EmailSubscription';
-import HowItWorks from './components/HowItWorks';
-import Footer from './components/Footer';
+import React, { lazy, Suspense } from 'react';
+
+const Header = lazy(() => import('./components/Header'));
+const Hero = lazy(() => import('./components/Hero'));
+const KeyFeatures = lazy(() => import('./components/KeyFeatures'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const EmailSubscription = lazy(() => import('./components/EmailSubscription'));
+const HowItWorks = lazy(() => import('./components/HowItWorks'));
+const Footer = lazy(() => import('./components/Footer'));
 
 const App = () => {
   return (
@@ -19,17 +21,23 @@ const App = () => {
       </div>
       <a href="#main-content" className="sr-only focus:not-sr-only">Skip to main content</a>
 
-      <Header aria-label="Site Header" />
+      <Suspense fallback={<div>Loading Header...</div>}>
+        <Header aria-label="Site Header" />
+      </Suspense>
 
       <main id="main-content" className="relative z-10 flex flex-col items-center justify-center w-full overflow-hidden">
-        <Hero aria-label="Hero Section" />
-        <KeyFeatures aria-label="Key Features Section" />
-        <Testimonials aria-label="Testimonials Section" />
-        <EmailSubscription aria-label="Email Subscription Section" />
-        <HowItWorks aria-label="How It Works Section" />
+        <Suspense fallback={<div>Loading Main Content...</div>}>
+          <Hero aria-label="Hero Section" />
+          <KeyFeatures aria-label="KeyFeatures Section" />
+          <Testimonials aria-label="Testimonials Section" />
+          <EmailSubscription aria-label="Email Subscription Section" />
+          <HowItWorks aria-label="How It Works Section" />
+        </Suspense>
       </main>
 
-      <Footer aria-label="Site Footer" />
+      <Suspense fallback={<div>Loading Footer...</div>}>
+        <Footer aria-label="Site Footer" />
+      </Suspense>
     </div>
   );
 };

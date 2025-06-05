@@ -5,6 +5,11 @@ const Header = () => {
 
   return (
     <header className="bg-dark-blue-800 text-white p-4 shadow-lg shadow-neon-purple/30 relative z-50 animate-fade-in border-b border-neon-blue/40 backdrop-blur-sm" role="banner">
+      <noscript>
+        <div className="bg-red-800 text-white p-2 text-center text-sm">
+          Please enable JavaScript or use the fallback link in the main section.
+        </div>
+      </noscript>
       <div className="container mx-auto flex justify-center items-center">
         {/* Logo */}
         <div className="flex items-center">

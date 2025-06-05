@@ -5,6 +5,11 @@ const Footer = () => {
 
   return (
     <footer className="bg-dark-blue-800 text-white py-8 px-4 sm:px-6 lg:px-8 relative z-10 shadow-inner shadow-neon-blue/20 animate-fade-in border-t border-neon-purple/30 backdrop-blur-sm" role="contentinfo">
+      <noscript>
+        <div className="bg-red-800 text-white p-2 text-center text-sm mt-8">
+          Full functionality requires JavaScript.
+        </div>
+      </noscript>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Copyright Information */}
         <div className="mb-4 md:mb-0 text-center md:text-left">

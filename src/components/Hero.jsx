@@ -3,6 +3,19 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="relative flex flex-col items-center justify-center text-center py-16 px-4 sm:py-20 md:py-24 lg:py-32 xl:py-40 bg-dark-blue-900 overflow-hidden border-b border-neon-blue/30 animate-fade-in">
+      <noscript>
+        <div className="bg-red-800 text-white p-4 text-center mb-8 rounded-lg shadow-lg">
+          <h2 className="text-2xl font-bold mb-2">JavaScript Disabled</h2>
+          <p className="text-lg mb-4">Please enable JavaScript to access the full experience. Alternatively, you can purchase the $5 AI Prompt Pack here:</p>
+          <a
+            href="https://6611101968303.gumroad.com/l/eruimz"
+            className="inline-block bg-neon-purple text-white font-bold py-2 px-4 rounded-lg text-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-md"
+            aria-label="Purchase AI Prompt Pack"
+          >
+            Get the $5 AI Prompt Pack
+          </a>
+        </div>
+      </noscript>
       {/* Animated background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-10 animate-background-shine"></div>

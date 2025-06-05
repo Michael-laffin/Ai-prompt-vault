@@ -2,6 +2,8 @@
   "name": "ai-prompt-vault",
   "version": "1.0.0",
   "dependencies": {
+    "@sentry/react": "^9.27.0",
+    "@sentry/tracing": "^7.120.3",
     "@supabase/supabase-js": "^2.49.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
