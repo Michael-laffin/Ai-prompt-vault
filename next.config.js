@@ -19,4 +19,32 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  ...nextConfig,
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            pattern: 'www.aipromptvault.dev',
+          },
+        ],
+        destination: 'https://aipromptvault.dev/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            pattern: 'aipromptvault.dev',
+          },
+        ],
+        destination: 'https://www.aipromptvault.dev/:path*',
+        permanent: true,
+      },
+    ];
+  },
+};

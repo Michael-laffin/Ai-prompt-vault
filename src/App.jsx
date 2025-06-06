@@ -1,3 +1,4 @@
+export const dynamic = 'force-static';
 import React, { lazy, Suspense } from 'react';
 
 const Header = lazy(() => import('./components/Header'));
