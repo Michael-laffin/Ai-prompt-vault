@@ -1,12 +1,16 @@
 export const dynamic = 'force-static';
 import React, { lazy, Suspense } from 'react';
 
+// Load all components
 const Header = lazy(() => import('./components/Header'));
-const Hero = lazy(() => import('./components/Hero'));
-const KeyFeatures = lazy(() => import('./components/KeyFeatures'));
-const Testimonials = lazy(() => import('./components/Testimonials'));
-const EmailSubscription = lazy(() => import('./components/EmailSubscription'));
-const HowItWorks = lazy(() => import('./components/HowItWorks'));
+const Hero = lazy(() => import('./components/HeroV2'));
+const SamplePrompt = lazy(() => import('./components/SamplePrompt'));
+const WhatYouGet = lazy(() => import('./components/WhatYouGet'));
+const Testimonials = lazy(() => import('./components/TestimonialsV2'));
+const PricingSection = lazy(() => import('./components/PricingSection'));
+const FAQ = lazy(() => import('./components/FAQ'));
+const Guarantee = lazy(() => import('./components/Guarantee'));
+const FinalCTA = lazy(() => import('./components/FinalCTA'));
 const Footer = lazy(() => import('./components/Footer'));
 
 const App = () => {
@@ -28,11 +32,29 @@ const App = () => {
 
       <main id="main-content" className="relative z-10 flex flex-col items-center justify-center w-full overflow-hidden">
         <Suspense fallback={<div>Loading Main Content...</div>}>
+          {/* 1. HERO - Hook with clear value proposition */}
           <Hero aria-label="Hero Section" />
-          <KeyFeatures aria-label="KeyFeatures Section" />
+          
+          {/* 2. SAMPLE PROMPT - Show the difference (try before you buy) */}
+          <SamplePrompt aria-label="Sample Prompt Section" />
+          
+          {/* 3. WHAT YOU GET - Detailed breakdown of what's included */}
+          <WhatYouGet aria-label="What You Get Section" />
+          
+          {/* 4. TESTIMONIALS - Social proof */}
           <Testimonials aria-label="Testimonials Section" />
-          <EmailSubscription aria-label="Email Subscription Section" />
-          <HowItWorks aria-label="How It Works Section" />
+          
+          {/* 5. PRICING - 3 tiers with comparison */}
+          <PricingSection aria-label="Pricing Section" />
+          
+          {/* 6. FAQ - Handle objections */}
+          <FAQ aria-label="FAQ Section" />
+          
+          {/* 7. GUARANTEE - Risk reversal */}
+          <Guarantee aria-label="Guarantee Section" />
+          
+          {/* 8. FINAL CTA - Urgency + last chance */}
+          <FinalCTA aria-label="Final CTA Section" />
         </Suspense>
       </main>
 
