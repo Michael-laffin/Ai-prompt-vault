@@ -99,7 +99,7 @@ const PricingSection = () => {
             </ul>
 
             <a
-              href="https://6611101968303.gumroad.com/l/eruimz"
+              href="https://6611101968303.gumroad.com/l/qsgqdi"
               className="block w-full py-4 text-center text-white font-bold bg-gradient-to-r from-neon-purple to-neon-blue rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-neon-glow-purple font-syncopate tracking-wider"
             >
               Get Pro Pack
@@ -140,7 +140,7 @@ const PricingSection = () => {
             </ul>
 
             <a
-              href="https://6611101968303.gumroad.com/l/eruimz"
+              href="https://6611101968303.gumroad.com/l/oqowny"
               className="block w-full py-3 text-center text-white font-bold bg-dark-blue-700 hover:bg-dark-blue-600 border border-neon-yellow/30 rounded-lg transition-all duration-300 font-syncopate tracking-wider"
             >
               Get Business Pack
